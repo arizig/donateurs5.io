@@ -42,3 +42,12 @@ header {
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
