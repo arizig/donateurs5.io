@@ -105,3 +105,9 @@ main {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
+.location,
+.phone {
+  color: #777;
+  font-size: 0.9rem;
+}
