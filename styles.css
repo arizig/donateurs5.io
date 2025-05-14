@@ -35,3 +35,10 @@ header {
 .sidebar h2 {
   margin-top: 0;
 }
+
+.filter-box {
+  background-color: #34495e;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
