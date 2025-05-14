@@ -46,3 +46,11 @@ function filterDonors() {
   const filtered = selectedGender === 'all' ? donors : donors.filter(d => d.gender === selectedGender);
   displayDonors(filtered);
 }
+
+function toggleSortAmount() {
+  sortAsc = !sortAsc;
+  const sorted = [...donors].sort((a, b) =>
+    sortAsc ? a.amount - b.amount : b.amount - a.amount
+  );
+  displayDonors(sorted);
+}
