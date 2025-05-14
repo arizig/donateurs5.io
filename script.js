@@ -54,3 +54,8 @@ function toggleSortAmount() {
   );
   displayDonors(sorted);
 }
+
+function sortByName() {
+  const sorted = [...donors].sort((a, b) => a.firstName.localeCompare(b.firstName));
+  displayDonors(sorted);
+}
