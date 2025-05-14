@@ -99,3 +99,9 @@ main {
   width: 80px;
   height: 80px;
 }
+
+.amount {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
