@@ -51,3 +51,7 @@ header {
   color: white;
   cursor: pointer;
 }
+
+.filter-option input[type="radio"] {
+  margin-right: 0.5rem;
+}
