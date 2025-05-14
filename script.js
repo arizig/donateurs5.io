@@ -36,3 +36,13 @@ fetch('https://randomuser.me/api/?results=20')
     container.appendChild(card);
   });
 }
+
+document.querySelectorAll('input[name="gender"]').forEach(radio => {
+  radio.addEventListener('change', () => filterDonors());
+});
+
+function filterDonors() {
+  const selectedGender = document.querySelector('input[name="gender"]:checked').value;
+  const filtered = selectedGender === 'all' ? donors : donors.filter(d => d.gender === selectedGender);
+  displayDonors(filtered);
+}
