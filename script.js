@@ -19,3 +19,20 @@ fetch('https://randomuser.me/api/?results=20')
     }));
     displayDonors(donors);
   });
+
+  function displayDonors(list) {
+  const container = document.getElementById('donor-list');
+  container.innerHTML = '';
+  list.forEach(donor => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="amount">${donor.amount.toLocaleString('en-US', { style: 'currency', currency: 'EUR' })}</div>
+      <img src="${donor.picture}" alt="Profile picture">
+      <h3>${donor.name}</h3>
+      <p class="location">📍 ${donor.location}</p>
+      <p class="phone">📞 ${donor.phone}</p>
+    `;
+    container.appendChild(card);
+  });
+}
