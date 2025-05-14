@@ -72,3 +72,7 @@ header {
   text-align: left;
   cursor: pointer;
 }
+
+.sort-box button:hover {
+  color: #00aced;
+}
