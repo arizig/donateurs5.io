@@ -31,3 +31,7 @@ header {
   height: calc(100vh - 60px);
   box-sizing: border-box;
 }
+
+.sidebar h2 {
+  margin-top: 0;
+}
