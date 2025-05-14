@@ -55,3 +55,8 @@ header {
 .filter-option input[type="radio"] {
   margin-right: 0.5rem;
 }
+
+.filter-option .icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
