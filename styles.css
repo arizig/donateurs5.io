@@ -76,3 +76,12 @@ header {
 .sort-box button:hover {
   color: #00aced;
 }
+
+main {
+  margin-top: 60px;
+  padding: 1rem;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
